@@ -4,9 +4,11 @@ AWS IoT security baseline (AISB) is a set of security controls that create a min
 
 Refer to AWS IoT Security Baseline blog for details.
 
-## AISB solution architecture 
+## AISB Solution Architecture 
+
 The AISB solution architecture shows an IoT / IIoT device sending data to AWS IoT Core. Data from the edge device is sent to AWS for data storage, processing, analytics, and visualization. Along with the telemetry data, the IoT / IIoT device can also be configured  to send security event information to AWS using AWS IoT Device Defender. This event information is combined with cloud-based events to identify security misconfigurations and detect anomalies in the device behavior and notify personnel to respond to security events. 
 
+![AISB solution architecture](https://github.com/aws-samples/aws-iot-security-baseline/blob/main/images/blog_image.png)
 
 ## AISB Solution Deployment
 
