@@ -10,6 +10,17 @@ The AISB solution architecture shows an IoT / IIoT device sending data to AWS Io
 
 ![AISB solution architecture](https://github.com/aws-samples/aws-iot-security-baseline/blob/main/images/blog_image.png)
 
+- [AWS IoT Device Defender](https://aws.amazon.com/iot-device-defender/) makes it easy to audit device configurations, detect device anomalies, and receive alerts to help secure your IoT device fleet.
+
+- [Amazon CloudWatch](https://aws.amazon.com/cloudwatch/) makes it easy to observe and monitor AWS resources and applications in the cloud and on premises. When AWS IoT logging is enabled, AWS IoT sends event information to CloudWatch logs. [Amazon CloudWatch Events](https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/WhatIsCloudWatchEvents.html) is used to trigger an [AWS Lambda](https://aws.amazon.com/lambda/) function to identify device certificates that require rotation. 
+
+- [Amazon Simple Notification Service](https://aws.amazon.com/sns/) (SNS) is a managed service that is used by AWS IoT Device Defender to send out security alerts and notifications to authorized personnel when an audit fails or behavior anomalies are detected. 
+
+- [AWS CloudTrail](https://aws.amazon.com/cloudtrail/) monitors and records account activity across your AWS infrastructure, giving you control over storage, analysis, and remediation actions.
+
+- [Amazon GuardDuty](https://aws.amazon.com/guardduty/) is a threat detection service that continuously monitors your AWS accounts and workloads for malicious activity and delivers detailed security findings for visibility and remediation.
+
+
 ## AISB Solution Deployment
 
 Deploy [this](https://github.com/aws-samples/aws-iot-security-baseline/blob/main/template/aws_iot_security_baseline.yaml) AWS CloudFormation template to provision the AISB resources in your account. The template accepts the following parameters:
