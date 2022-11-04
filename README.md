@@ -10,6 +10,8 @@ The AISB solution architecture shows an IoT / IIoT device sending data to AWS Io
 
 ![AISB solution architecture](https://github.com/aws-samples/aws-iot-security-baseline/blob/main/images/blog_image.png)
 
+<img src="[https://your-image-url.type](https://github.com/aws-samples/aws-iot-security-baseline/blob/main/images/blog_image.png)" width="100" height="100">
+
 - [AWS IoT Device Defender](https://aws.amazon.com/iot-device-defender/) makes it easy to audit device configurations, detect device anomalies, and receive alerts to help secure your IoT device fleet.
 
 - [Amazon CloudWatch](https://aws.amazon.com/cloudwatch/) makes it easy to observe and monitor AWS resources and applications in the cloud and on premises. When AWS IoT logging is enabled, AWS IoT sends event information to CloudWatch logs. [Amazon CloudWatch Events](https://docs.aws.amazon.com/AmazonCloudWatch/latest/events/WhatIsCloudWatchEvents.html) is used to trigger an [AWS Lambda](https://aws.amazon.com/lambda/) function to identify device certificates that require rotation. 
