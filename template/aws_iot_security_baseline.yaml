@@ -117,6 +117,7 @@ Resources:
     Type: 'AWS::SNS::Topic'
     Properties:
       TopicName: IoTSecurityNotificationsTopic
+      KmsMasterKeyId: "alias/aws/sns"
       Subscription:
         - Endpoint: !Ref IoTSecurityNotificationsDL
           Protocol: email
